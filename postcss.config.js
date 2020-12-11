@@ -1,6 +1,6 @@
 /* eslint-env node */
 module.exports = {
-	map: {inline: false},
+	map: { inline: false },
 	plugins: [
 		require('postcss-import'),
 		require('postcss-url'),

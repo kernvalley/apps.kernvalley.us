@@ -22,6 +22,20 @@
 	}
 }
 
+:root:not([data-theme="dark"]) > body {
+	background-color: #dedede;
+}
+
+:root[data-theme="dark"] > body {
+	background-color: #313131;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme="light"]) > body {
+		background-color: #313131;
+	}
+}
+
 img.avatar {
 	vertical-align: middle;
 	margin-left: 1.2em;

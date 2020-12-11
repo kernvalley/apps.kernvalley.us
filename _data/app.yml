@@ -1,11 +1,11 @@
-name: Jekyll Template
-shortName: Jekyll Template
-version: 1.1.0
+name: Kern Valley Apps
+shortName: KRV Apps
+version: 1.0.0-a4
 lang: en
 dir: ltr
 display: standalone
 orientation: any
-description: "A GitHub repository for easily creating fast, modern, PWA compatible websites"
+description: "A directory of KernValley.US Web Apps"
 icons-file: /img/icons.svg
 theme:
   color: '#007bff'
@@ -34,45 +34,22 @@ icons:
   type: image/png
   sizes: 16x16
 screenshots:
-- src: 'https://i.imgur.com/IjdVouxh.png'
-  sizes: 1024x502
+- src: https://i.imgur.com/w8p9UNf.png
+  sizes: 1354x662
+- src: https://i.imgur.com/w8p9UNfh.png
+  sizes: 1024x501
   type: image/png
-- src: 'https://i.imgur.com/IjdVouxl.png'
-  sizes: 640x314
+- src: https://i.imgur.com/w8p9UNfl.png
+  sizes: 640x313
   type: image/png
-- src: 'https://i.imgur.com/IjdVouxm.png'
-  sizes: 320x157
+- src: https://i.imgur.com/w8p9UNfm.png
+  sizes: 320x156
   type: image/png
-- src: 'https://i.imgur.com/IjdVouxt.png'
+- src: https://i.imgur.com/w8p9UNft.png
   sizes: 160x78
   type: image/png
 # https://web.dev/app-shortcuts/
 shortcuts:
-- name: Bacon Ipsum
-  description: Test article and shortcut
-  url: /posts/2019/10/29/test/
-  icons:
-  - src: /img/post.svg
-    sizes: 192x192
-    type: image/svg+xml
-  - src: /img/post-192.png
-    sizes: 192x192
-    type: image/png
-  - src: /img/post-144.png
-    sizes: 144x144
-    type: image/png
-  - src: /img/post-96.png
-    sizes: 96x96
-    type: image/png
-  - src: /img/post-72.png
-    sizes: 72x72
-    type: image/png
-  - src: /img/post-48.png
-    sizes: 48x48
-    type: image/png
-  - src: /img/post-36.png
-    sizes: 36x36
-    type: image/png
 - name: CHANGELOG
   description: List of recent changes
   url: /changelog/
@@ -100,19 +77,11 @@ shortcuts:
     type: image/png
 related_applications: []
 features:
-- PWA-ready GitHub template for Jekyll sites
-- Dark mode support, controlled by (prefers-color-scheme) media query
-- Includes templates created with SEO via structured data in mind
-- Initial setup scores 99% on mobile on Page Speed Insights
-- Responsive design supporting any screen size thanks to CSS grid and use of viewport units
-- Integtation with system sharing via the Share API (with fallback)
-- Preset Pull Request and Issue templates, as well as Code of Conduct & Contributing Guidelines
-- Built-in testing via GitHub Actions, eslint, and stylelint
-- Always up-to-date thanks to preset Dependabot-v2 config
-- Setup for quick deployment to Netlify
-- Version files for Ruby and NodeJS (.rvmrc, .ruby-version, and .nvmrc)
+- Quick access to all KernValley.US web apps
+- Offline browsing supported
+- Dark mode support
+- Integtation with system sharing
 # https://github.com/w3c/manifest/wiki/Categories
 categories:
-- business
 - productivity
 - utilities

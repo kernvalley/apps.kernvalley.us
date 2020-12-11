@@ -7,12 +7,9 @@ layout: null
 
 const config = {
 	version: '{{ site.data.app.version | default: site.version }}',
-	fresh: [
-		/* Root document */
-		'{{ site.pages | where: "pinned", true | map: "url" | join: "', '" }}',
-		'{{ site.posts | where: "pinned", true | map: "url" | join: "', '" }}',
-	].map(path => new URL(path, location.origin).href),
+	fresh: [].map(path => new URL(path, location.origin).href),
 	stale: [
+		'/',
 		/* Other HTML */
 		'/css/index.min.css',
 		'/js/index.min.js',
@@ -22,22 +19,17 @@ const config = {
 		'https://cdn.polyfill.io/v3/polyfill.min.js',
 		'https://cdn.kernvalley.us/components/share-target.js',
 
-		/* `customElements`templates */
+		/* `customElements` templates */
 		'https://cdn.kernvalley.us/components/toast-message.html',
-		'https://cdn.kernvalley.us/components/leaflet/map.html',
 		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.html',
-		'https://cdn.kernvalley.us/components/slide-show/slide-show.html',
 		'https://cdn.kernvalley.us/components/github/user.html',
 		'https://cdn.kernvalley.us/components/pwa/prompt.html',
 
 		/* CSS */
 		'https://cdn.kernvalley.us/components/toast-message.css',
-		'https://cdn.kernvalley.us/components/leaflet/map.css',
 		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.css',
-		'https://cdn.kernvalley.us/components/slide-show/slide-show.css',
 		'https://cdn.kernvalley.us/components/github/user.css',
 		'https://cdn.kernvalley.us/components/pwa/prompt.css',
-		'https://unpkg.com/leaflet@1.6.0/dist/leaflet.css',
 
 		/* Images & Icons */
 		'/img/apple-touch-icon.png',
@@ -67,6 +59,6 @@ const config = {
 		/https:\/\/secure\.gravatar\.com\/avatar\/*/,
 		/https:\/\/*\.githubusercontent\.com\/u\/*/,
 		/https:\/\/api\.github\.com\/users\/*/,
-		/https:\/\/baconipsum\.com\/api\/*/,
+		/https:\/\/cdn\.kernvalley\.us\/img\/*/,
 	],
 };

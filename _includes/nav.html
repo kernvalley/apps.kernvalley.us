@@ -6,4 +6,10 @@
 			<span class="nav-link-label">{{ link.label }}</span>
 		</a>
 	{% endfor %}
+	{% if site.service_worker %}
+		<button type="button" is="pwa-install" id="install-btn" src="{{ site.service_worker }}" scope="/" title="Install Web App" reloadonupdate="" hidden="">
+		{% include icon.html height="16" width="16" icon="system-software-install" %}
+		<span>Install</span>
+	</button>
+	{% endif %}
 </nav>
