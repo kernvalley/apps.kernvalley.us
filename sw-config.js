@@ -54,9 +54,7 @@ const config = {
 		/* Other */
 	].map(path => new URL(path, location.origin).href),
 	allowed: [
-		/https:\/\/maps\.wikimedia\.org\/osm-intl\/*/,
 		/https:\/\/i\.imgur\.com\/*/,
-		/https:\/\/secure\.gravatar\.com\/avatar\/*/,
 		/https:\/\/*\.githubusercontent\.com\/u\/*/,
 		/https:\/\/api\.github\.com\/users\/*/,
 		/https:\/\/cdn\.kernvalley\.us\/img\/*/,

@@ -1,5 +1,5 @@
-export const GA = null;
+export const GA = 'G-V9KBKT46RB';
 
 export const site = {
-	title: 'Jekyll Template',
+	title: 'Kern Valley Apps',
 };

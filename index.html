@@ -12,7 +12,7 @@ tags:
 ---
 <section class="app-list grid" id="apps">
 	{% for app in site.data.apps %}
-		<a class="card inline-block shadow app" href="{{ app.url }}?utm_source=kr-apps&amp;utm_medium=web&amp;utm_content=app-list" rel="noopener noreferrer external" title="Open {{ app.name | escape }}" itemtype="https://schema.org/WebApplication" itemscope="">
+		<a class="card inline-block shadow app" href="{{ app.url }}?utm_source=krv-apps&amp;utm_medium=web&amp;utm_content=app-list" rel="noopener noreferrer external" title="Open {{ app.name | escape }}" itemtype="https://schema.org/WebApplication" itemscope="">
 			<meta itemprop="url" content="{{ app.url }}" />
 			<meta itemprop="browserRequirements" content="{{ app.browserRequirements | default: 'es6, CSS custom properties, CSS grid' }}" />
 			<meta itemprop="applicationCategory" content="{{ app.applicationCategory | default: 'Utility' }}" />
