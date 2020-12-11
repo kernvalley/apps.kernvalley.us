@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.0.0] 2020-12-11
+
 ### Added
 - Set of apps with icons
 - Various icons
