@@ -1,8 +1,78 @@
-main {
+#main {
 	--link-color: #049ccf;
 	--link-decoration: underline;
+	padding: 3em 0;
+	overflow-x: hidden;
 }
 
-article p:first-letter {
-	margin-left: 2em;
+#main > * {
+	margin: 8px 0;
+}
+
+#apps {
+	grid-template-columns: repeat(auto-fit, 280px);
+	grid-template-rows: repeat(auto-fit, auto);
+	gap: 12px;
+	justify-content: space-evenly;
+}
+
+@media (max-width: 500px) {
+	#apps {
+		grid-template-columns: repeat(auto-fit, 80%);
+	}
+}
+
+#apps .app {
+	display: grid;
+	color: inherit;
+	text-decoration: none;
+	grid-template-areas: ". image ." "name name name" "description description description";
+	grid-template-columns: auto 150px auto;
+	grid-template-rows: 150px auto auto;
+	gap: 8px;
+	transform: none;
+	filter: none;
+	transition: transform 400ms ease-in-out, filter 400ms ease-in-out;
+	position: relative;
+	z-index: 1;
+}
+
+#apps .app:hover {
+	transform: scale(1.15) rotate(-10deg);
+	z-index: 2;
+	filter: drop-shadow(8px 8px 12px rgba(0, 0, 0, 0.7))
+}
+
+#apps .app-name {
+	grid-area: name;
+	text-align: center;
+	text-decoration: underline;
+}
+
+#apps .app-image {
+	grid-area: image;
+	object-fit: cover;
+	border-radius: 12px;
+}
+
+#apps .app-description {
+	grid-area: description;
+}
+
+#share-section .share-btns {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+#share-section .share-btns .share-heading {
+	flex-basis: 100%;
+}
+
+#share-section .share-btns share-to-button {
+	flex-grow: 1;
+	max-width: 300px;
+	text-align: center;
 }

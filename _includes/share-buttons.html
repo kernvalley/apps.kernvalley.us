@@ -1,5 +1,5 @@
 <div class="share-btns">
-	<h4>{{ include.heading | default: 'Share on&hellip;' }}</h4>
+	<h4 class="share-heading">{{ include.heading | default: 'Share on&hellip;' }}</h4>
 	{% if include.facebook %}
 		<share-to-button target="facebook" class="custom-element share-target if-defined" text="{{ include.text }}" url="{{ include.url | default: page.url }}" title="Share on Facebook" source="{{ include.source | default: site.title | slugify }}" medium="{{ include.medium }}" content="{{ include.content }}">
 				<span slot="text">
@@ -35,5 +35,4 @@
 			</span>
 		</share-to-button>
 	{% endif %}
-	<hr />
 </div>

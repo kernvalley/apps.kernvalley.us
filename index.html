@@ -1,35 +1,33 @@
 ---
-layout: default
+layout: wide
 title: Home
 pinned: true
-description: A GitHub repository for easily creating fast, modern, PWA compatible websites
+description: A list of apps made by KernValley.US for the Kern River Valley
 tags:
-- jekyll
-- pwa
-- github template repo
-prerender:
-- href: /posts/2019/10/29/test/
+- kernvalley
+- kernvalley.us
+- apps
+- list
+- directory
 ---
-<section class="pagination">
-	<div class="grid grid-gallery">
-		{% for post in paginator.posts %}
-			<div class="article-preview card shadow-dark">
-				{% include post-preview.html post=post %}
+<section class="app-list grid" id="apps">
+	{% for app in site.data.apps %}
+		<a class="card inline-block shadow app" href="{{ app.url }}?utm_source=kr-apps&amp;utm_medium=web&amp;utm_content=app-list" rel="noopener noreferrer external" title="Open {{ app.name | escape }}" itemtype="https://schema.org/WebApplication" itemscope="">
+			<meta itemprop="url" content="{{ app.url }}" />
+			<meta itemprop="browserRequirements" content="{{ app.browserRequirements | default: 'es6, CSS custom properties, CSS grid' }}" />
+			<meta itemprop="applicationCategory" content="{{ app.applicationCategory | default: 'Utility' }}" />
+			<meta itemprop="operatingSystem" content="{{ app.operatingSysttem | default: 'Android 9, iOS 13, Windows 10, OSX' }}" />
+			<img src="{{ app.image.url }}" class="app-image" itemprop="image" alt="{{ app.image.alt | default: app.name | escape }}" loading="lazy" decoding="async" crossorigin="anonymous" referrerpolicy="no-referrer" height="{{ app.image.height | default: '150' }}" width="{{ app.image.width | default: '150' }}" />
+			<h3 class="app-name" itemprop="name">{{ app.name }}</h3>
+			<div class="app-description" itemprop="description">{{ app.description }}</div>
+			<div itemprop="publisher" itemtype="https://schema.org/Organization" itemscope="" hidden="">
+				<meta itemprop="name" content="KernValley.US" />
+				<meta itemprop="url" content="https://kernvalley.us" />
+				<meta itemprop="logo image" content="https://cdn.kernvalley.us/img/branding/kernvalley.us.svg" />
 			</div>
-		{% endfor %}
-	</div>
-	{% if paginator.previous_page or paginator.next_page %}
-		<footer class="paginate-nav">
-			{% if paginator.previous_page %}
-				<a href="{{ paginator.previous_page_path  }}" rel="prev" role="button" title="Previous page">
-					{% include icon.html icon='prev' %}
-				</a>
-			{% endif %}
-			{% if paginator.next_page %}
-				<a href="{{ paginator.next_page_path }}" role="button" rel="next" title="Next page">
-					{% include icon.html icon='next' %}
-				</a>
-			{% endif %}
-		</footer>
-	{% endif %}
+		</a>
+	{% endfor %}
+</section>
+<section id="share-section" class="card">
+	{% include share-buttons.html facebook=true twitter=true linkedin=true reddit=true %}
 </section>

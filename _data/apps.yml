@@ -1,0 +1,40 @@
+- url: https://kernvalley.us
+  name: KernValley.US
+  description: Homepage for the Kern River Valley
+  image:
+    url: https://cdn.kernvalley.us/img/branding/kernvalley.us.svg
+- url: https://events.kernvalley.us
+  name: Kern Valley Events
+  description: All of the best events in the Kern River Valley
+  image:
+    url: https://cdn.kernvalley.us/img/branding/events.kernvalley.us.svg
+- url: https://ads.kernvalley.us
+  name: Kern Valley Ads
+  description: Advertise on local websites throughout the Kern River Valley
+  image:
+    url: https://cdn.kernvalley.us/img/branding/ads.kernvalley.us.svg
+- url: https://whiskeyflatdats.com
+  name: Whiskey Flat Days
+  description: Map and events app for Whiskey Flat Days in Kernville, CA
+  image:
+    url: https://cdn.kernvalley.us/img/branding/whiskeyflatdays.com.svg
+- url: https://maps.kernvalley.us
+  name: Kern Valley Maps
+  description: Map of businesses and locations throughout the Kern River Valley
+  image:
+    url: https://cdn.kernvalley.us/img/branding/maps.kernvalley.us.svg
+- url: https://news.kernvalley.us
+  name: Kern River Courier
+  description: News for the Kern River Valley
+  image:
+    url: https://cdn.kernvalley.us/img/branding/news.kernvalley.us.svg
+- url: https://maps.kernvalley.us
+  name: Kern Valley Camping
+  description: Map and info for camping sites aruond the Kern River Valley
+  image:
+    url: https://cdn.kernvalley.us/img/branding/camping.kernvalley.us.svg
+- url: https://weather.kernvalley.us
+  name: Kern Valley Weather
+  description: Weather for various towns in the Kern River Valley
+  image:
+    url: https://cdn.kernvalley.us/img/branding/weather.kernvalley.us.svg
