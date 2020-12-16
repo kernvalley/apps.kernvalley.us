@@ -13,6 +13,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Theme handling via `cookieStore`
+
+### Changed
+- Load `customElements` shim via `<script nomodule>`
+
+### Removed
+- No more alternate dark/light (invalid) stylesheets
+
+### Fixed
+- Fix typo in icon template
+
 ## [v1.0.0] 2020-12-11
 
 ### Added
