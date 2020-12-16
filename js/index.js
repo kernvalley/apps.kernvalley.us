@@ -1,6 +1,6 @@
 import 'https://cdn.kernvalley.us/js/std-js/deprefixer.js';
 import 'https://cdn.kernvalley.us/js/std-js/shims.js';
-import 'https://unpkg.com/@webcomponents/custom-elements@1.4.2/custom-elements.min.js';
+import 'https://cdn.kernvalley.us/js/std-js/theme-cookie.js';
 import 'https://cdn.kernvalley.us/components/share-button.js';
 import 'https://cdn.kernvalley.us/components/share-to-button/share-to-button.js';
 import 'https://cdn.kernvalley.us/components/github/user.js';
@@ -37,22 +37,24 @@ requestIdleCallback(() => {
 if (typeof GA === 'string' && GA.length !== 0) {
 	requestIdleCallback(() => {
 		importGa(GA).then(async ({ ga }) => {
-			ga('create', GA, 'auto');
-			ga('set', 'transport', 'beacon');
-			ga('send', 'pageview');
+			if (ga instanceof Function) {
+				ga('create', GA, 'auto');
+				ga('set', 'transport', 'beacon');
+				ga('send', 'pageview');
 
-			await ready();
+				await ready();
 
-			$('a[rel~="external"]').click(externalHandler, { passive: true, capture: true });
-			$('a[href^="tel:"]').click(telHandler, { passive: true, capture: true });
-			$('a[href^="mailto:"]').click(mailtoHandler, { passive: true, capture: true });
+				$('a[rel~="external"]').click(externalHandler, { passive: true, capture: true });
+				$('a[href^="tel:"]').click(telHandler, { passive: true, capture: true });
+				$('a[href^="mailto:"]').click(mailtoHandler, { passive: true, capture: true });
+			}
+
 		});
 	});
 }
 
-Promise.allSettled([
+Promise.all([
 	ready(),
 	loadScript('https://cdn.polyfill.io/v3/polyfill.min.js'),
-]).then(() => {
-	init();
-});
+	init(),
+]).catch(console.error);
