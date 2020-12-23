@@ -30,11 +30,13 @@
     url: https://cdn.kernvalley.us/img/branding/apps.kernvalley.us.svg
 - url: https://maps.kernvalley.us
   name: Kern Valley Maps
+  dev: true
   description: Map of businesses and locations throughout the Kern River Valley
   image:
     url: https://cdn.kernvalley.us/img/branding/maps.kernvalley.us.svg
 - url: https://maps.kernvalley.us
   name: Kern Valley Camping
+  dev: true
   description: Map and info for camping sites aruond the Kern River Valley
   image:
     url: https://cdn.kernvalley.us/img/branding/camping.kernvalley.us.svg
@@ -43,6 +45,12 @@
   description: Weather for various towns in the Kern River Valley
   image:
     url: https://cdn.kernvalley.us/img/branding/weather.kernvalley.us.svg
+- url: https://delivery.kernvalley.us
+  dev: true
+  name: Kern River Delivery
+  description: Upcoming online ordering and delivery app for the Kern River Valley
+  image:
+    url: https://cdn.kernvalley.us/img/branding/delivery.kernvalley.us.svg
 - url: https://news.kernvalley.us
   dev: true
   name: Kern River Courier
