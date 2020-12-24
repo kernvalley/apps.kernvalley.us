@@ -2,6 +2,10 @@
   nomodule: true
   defer: true
   async: true
+- src: https://cdn.polyfill.io/v3/polyfill.min.js
+  nomodule: true
+  defer: true
+  async: true
 - src: /js/index.min.js
   referrerPolicy: no-referrer
   async: true
