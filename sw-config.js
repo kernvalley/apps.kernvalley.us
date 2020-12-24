@@ -16,14 +16,17 @@ const config = {
 		'/img/icons.svg',
 
 		/* JS */
+		'https://cdn.kernvalley.us/components/share-target.js',
 
 		/* `customElements` templates */
 		'https://cdn.kernvalley.us/components/toast-message.html',
+		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.html',
 		'https://cdn.kernvalley.us/components/github/user.html',
 		'https://cdn.kernvalley.us/components/pwa/prompt.html',
 
 		/* CSS */
 		'https://cdn.kernvalley.us/components/toast-message.css',
+		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.css',
 		'https://cdn.kernvalley.us/components/github/user.css',
 		'https://cdn.kernvalley.us/components/pwa/prompt.css',
 
@@ -34,7 +37,6 @@ const config = {
 		'/img/icon-32.png',
 		'/img/favicon.svg',
 
-
 		/* Fonts */
 		'https://cdn.kernvalley.us/fonts/roboto.woff2',
 		'https://cdn.kernvalley.us/fonts/Libertine.woff',
@@ -42,6 +44,7 @@ const config = {
 		/* Other */
 	].map(path => new URL(path, location.origin).href),
 	allowed: [
+		/https:\/\/i\.imgur\.com\/*/,
 		/https:\/\/*\.githubusercontent\.com\/u\/*/,
 		/https:\/\/api\.github\.com\/users\/*/,
 		/https:\/\/cdn\.kernvalley\.us\/img\/*/,
