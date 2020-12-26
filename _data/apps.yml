@@ -51,6 +51,12 @@
   description: Upcoming online ordering and delivery app for the Kern River Valley
   image:
     url: https://cdn.kernvalley.us/img/branding/delivery.kernvalley.us.svg
+- url: https://accounts.kernvalley.us
+  dev: true
+  name: Kern Valley Accounts
+  description: Sign-in and registration for KernValley.US Accounts
+  image:
+    url: https://cdn.kernvalley.us/img/branding/accounts.kernvalley.us.svg
 - url: https://news.kernvalley.us
   dev: true
   name: Kern River Courier
