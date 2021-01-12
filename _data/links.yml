@@ -13,10 +13,10 @@ footer:
       - noopener
       - external
       - noreferrer
-  - label: All Apps
-    icon: apps
-    href: https://apps.kernvalley.us
+  - label: Contact
+    icon: address-book
+    href: /contact
     rel:
-      - noreferrer
       - noopener
       - external
+      - noreferrer
