@@ -1,0 +1,22 @@
+footer:
+  - label: KernValley.US
+    icon: web-browser
+    href: https://kernvalley.us
+    rel:
+      - noopener
+      - external
+      - noreferrer
+  - label: Privacy
+    icon: eye
+    href: https://kernvalley.us/privacy/
+    rel:
+      - noopener
+      - external
+      - noreferrer
+  - label: All Apps
+    icon: apps
+    href: https://apps.kernvalley.us
+    rel:
+      - noreferrer
+      - noopener
+      - external
