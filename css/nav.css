@@ -1,12 +1,14 @@
 #nav {
-	padding: 0.6em;
 	font-size: 1.2em;
-	justify-content: space-around;
+	gap: 18px;
 }
 
-#install-btn {
-	margin-left: auto;
-	color: inherit;
+#nav > .nav-btn {
 	background-color: transparent;
+	color: inherit;
 	border: none;
+}
+
+#install-btn > svg {
+	margin-bottom: 10px;
 }

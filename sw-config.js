@@ -7,7 +7,9 @@ layout: null
 
 const config = {
 	version: '{{ site.data.app.version | default: site.version }}',
-	fresh: [].map(path => new URL(path, location.origin).href),
+	fresh: [
+		'/manifest.json',
+	].map(path => new URL(path, location.origin).href),
 	stale: [
 		'/',
 		/* Other HTML */
@@ -37,11 +39,10 @@ const config = {
 		'/img/icon-32.png',
 		'/img/favicon.svg',
 		'https://cdn.kernvalley.us/img/logos/play-badge.svg',
+		'https://cdn.kernvalley.us/img/logos/instagram.svg',
 
 		/* Fonts */
 		'https://cdn.kernvalley.us/fonts/roboto.woff2',
-		'https://cdn.kernvalley.us/fonts/Libertine.woff',
-		'https://cdn.kernvalley.us/fonts/ubuntu.woff2',
 		/* Other */
 	].map(path => new URL(path, location.origin).href),
 	allowed: [
