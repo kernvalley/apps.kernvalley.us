@@ -11,77 +11,53 @@ theme:
   color: '#007bff'
   background: '#242424'
 icons:
-- src: /img/favicon.svg
-  type: image/svg+xml
-  sizes: 150x150
-  purpose: maskable any
-- src: /img/apple-touch-icon.png
-  rel: apple-touch-icon
-  type: image/png
-  sizes: 180x180
-- src: /img/icon-512.png
-  type: image/png
-  sizes: 512x512
-  purpose: maskable any
-- src: /img/icon-192.png
-  type: image/png
-  sizes: 192x192
-  purpose: maskable any
-- src: /img/icon-32.png
-  type: image/png
-  sizes: 32x32
-- src: /img/icon-16.png
-  type: image/png
-  sizes: 16x16
-screenshots:
-- src: https://i.imgur.com/w8p9UNf.png
-  sizes: 1354x662
-- src: https://i.imgur.com/w8p9UNfh.png
-  sizes: 1024x501
-  type: image/png
-- src: https://i.imgur.com/w8p9UNfl.png
-  sizes: 640x313
-  type: image/png
-- src: https://i.imgur.com/w8p9UNfm.png
-  sizes: 320x156
-  type: image/png
-- src: https://i.imgur.com/w8p9UNft.png
-  sizes: 160x78
-  type: image/png
-# https://web.dev/app-shortcuts/
-shortcuts:
-- name: CHANGELOG
-  description: List of recent changes
-  url: /changelog/
-  icons:
-  - src: /img/changelog.svg
-    sizes: 192x192
+  - src: /img/favicon.svg
     type: image/svg+xml
-  - src: /img/changelog-192.png
+    sizes: 150x150
+    purpose: maskable any
+  - src: /img/apple-touch-icon.png
+    rel: apple-touch-icon
+    type: image/png
+    sizes: 180x180
+  - src: /img/icon-512.png
+    type: image/png
+    sizes: 512x512
+    purpose: maskable any
+  - src: /img/icon-192.png
+    type: image/png
     sizes: 192x192
+    purpose: maskable any
+  - src: /img/icon-32.png
     type: image/png
-  - src: /img/changelog-144.png
-    sizes: 144x144
+    sizes: 32x32
+  - src: /img/icon-16.png
     type: image/png
-  - src: /img/changelog-96.png
-    sizes: 96x96
+    sizes: 16x16
+screenshots:
+  - src: https://i.imgur.com/w8p9UNf.png
+    sizes: 1354x662
+  - src: https://i.imgur.com/w8p9UNfh.png
+    sizes: 1024x501
     type: image/png
-  - src: /img/changelog-72.png
-    sizes: 72x72
+  - src: https://i.imgur.com/w8p9UNfl.png
+    sizes: 640x313
     type: image/png
-  - src: /img/changelog-48.png
-    sizes: 48x48
+  - src: https://i.imgur.com/w8p9UNfm.png
+    sizes: 320x156
     type: image/png
-  - src: /img/changelog-36.png
-    sizes: 36x36
+  - src: https://i.imgur.com/w8p9UNft.png
+    sizes: 160x78
     type: image/png
-related_applications: []
+# https://web.dev/app-shortcuts/
+related_applications:
+  - platform: webapp
+    url: https://apps.kernvalley.us/manifest.json
 features:
-- Quick access to all KernValley.US web apps
-- Offline browsing supported
-- Dark mode support
-- Integtation with system sharing
+  - Quick access to all KernValley.US web apps
+  - Offline browsing supported
+  - Dark mode support
+  - Integtation with system sharing
 # https://github.com/w3c/manifest/wiki/Categories
 categories:
-- productivity
-- utilities
+  - productivity
+  - utilities
