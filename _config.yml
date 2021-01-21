@@ -19,7 +19,8 @@ service_worker: "./service-worker.js"
 og-type: website
 description: "A directory of KernValley.US Web Apps"
 mobile-web-app-capable: true
-canonical: https://infallible-galileo-ac41ee.netlify.app/''
+canonical: https://infallible-galileo-ac41ee.netlify.app/
+keep-kern-clean: true
 keywords:
   - jekyll
   - static
