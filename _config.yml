@@ -15,7 +15,6 @@ robots: 'follow, index'
 referrer: no-referrer
 manifest: /manifest.json
 tiles-config: /browserconfig.xml
-keep-kern-clean: true
 service_worker: "./service-worker.js"
 og-type: website
 description: "A directory of KernValley.US Web Apps"
