@@ -11,14 +11,11 @@ const config = {
 		'/manifest.json',
 	].map(path => new URL(path, location.origin).href),
 	stale: [
+		/* HTML */
 		'/',
-		/* Other HTML */
-		'/css/index.min.css',
-		'/js/index.min.js',
-		'/img/icons.svg',
 
 		/* JS */
-		'https://cdn.kernvalley.us/components/share-target.js',
+		'/js/index.min.js',
 
 		/* `customElements` templates */
 		'https://cdn.kernvalley.us/components/toast-message.html',
@@ -27,12 +24,14 @@ const config = {
 		'https://cdn.kernvalley.us/components/pwa/prompt.html',
 
 		/* CSS */
+		'/css/index.min.css',
 		'https://cdn.kernvalley.us/components/toast-message.css',
 		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.css',
 		'https://cdn.kernvalley.us/components/github/user.css',
 		'https://cdn.kernvalley.us/components/pwa/prompt.css',
 
 		/* Images & Icons */
+		'/img/icons.svg',
 		'/img/apple-touch-icon.png',
 		'/img/icon-512.png',
 		'/img/icon-192.png',
