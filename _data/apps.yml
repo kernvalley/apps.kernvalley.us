@@ -23,6 +23,11 @@
   description: Contact KernValley.US
   image:
     url: https://cdn.kernvalley.us/img/branding/contact.kernvalley.us.svg
+- url: https://guide.kernvalley.us
+  name: Kern Valley Guide
+  description: List KRV businesses with address, phone number, website, etc.
+  image:
+    url: https://cdn.kernvalley.us/img/branding/guide.kernvalley.us.svg
 - url: https://apps.kernvalley.us
   name: KernValley.US Apps
   description: A listing of sites made by KernValley.US for the Kern River Valley
