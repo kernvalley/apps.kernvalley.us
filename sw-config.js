@@ -45,9 +45,13 @@ const config = {
 		/* Other */
 	].map(path => new URL(path, location.origin).href),
 	allowed: [
-		/https:\/\/i\.imgur\.com\/*/,
+		'https://www.google-analytics.com/analytics.js',
+		'https://www.googletagmanager.com/gtag/js',
+		'https://i.imgur.com/',
+		'https://cdn.kernvalley.us/img/',
 		/https:\/\/*\.githubusercontent\.com\/u\/*/,
-		/https:\/\/api\.github\.com\/users\/*/,
-		/https:\/\/cdn\.kernvalley\.us\/img\/*/,
 	],
+	allowedFresh: [
+		'https://api.github.com/users/',
+	]
 };
