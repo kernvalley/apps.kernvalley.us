@@ -2,10 +2,14 @@
   nomodule: true
   defer: true
   async: true
+  referrerPolicy: no-referrer
+  crossOrigin: anonymous
 - src: https://cdn.polyfill.io/v3/polyfill.min.js
   nomodule: true
   defer: true
   async: true
+  referrerPolicy: no-referrer
+  crossOrigin: anonymous
 - src: /js/index.min.js
   referrerPolicy: no-referrer
   async: true
