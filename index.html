@@ -12,20 +12,22 @@ tags:
 ---
 <section class="app-list grid" id="apps">
 	{% for app in site.data.apps %}
-		<a class="card inline-block shadow app" href="{{ app.url }}?utm_source=krv-apps&amp;utm_medium=web&amp;utm_content=app-list" rel="noopener noreferrer external" title="Open {{ app.name | escape }}" itemtype="https://schema.org/WebApplication" itemscope="">
-			<meta itemprop="url" content="{{ app.url }}" />
-			<meta itemprop="browserRequirements" content="{{ app.browserRequirements | default: 'es6, CSS custom properties, CSS grid' }}" />
-			<meta itemprop="applicationCategory" content="{{ app.applicationCategory | default: 'Utility' }}" />
-			<meta itemprop="operatingSystem" content="{{ app.operatingSysttem | default: 'Android 9, iOS 13, Windows 10, OSX' }}" />
-			<img src="{{ app.image.url }}" class="app-image" itemprop="image" alt="{{ app.image.alt | default: app.name | escape }}" loading="lazy" decoding="async" crossorigin="anonymous" referrerpolicy="no-referrer" height="{{ app.image.height | default: '150' }}" width="{{ app.image.width | default: '150' }}" />
-			<h3 class="app-name" itemprop="name">{{ app.name }}</h3>
-			<div class="app-description" itemprop="description">{{ app.description }}</div>
-			<div itemprop="publisher" itemtype="https://schema.org/Organization" itemscope="" hidden="">
-				<meta itemprop="name" content="KernValley.US" />
-				<meta itemprop="url" content="https://kernvalley.us" />
-				<meta itemprop="logo image" content="https://cdn.kernvalley.us/img/branding/kernvalley.us.svg" />
-			</div>
-		</a>
+		{% unless app.dev == true or app.url == 'https://apps.kernvalley.us' %}
+			<a class="card inline-block shadow app" href="{{ app.url }}?utm_source=krv-apps&amp;utm_medium=web&amp;utm_content=app-list" rel="noopener noreferrer external" title="Open {{ app.name | escape }}" itemtype="https://schema.org/WebApplication" itemscope="">
+				<meta itemprop="url" content="{{ app.url }}" />
+				<meta itemprop="browserRequirements" content="{{ app.browserRequirements | default: 'es6, CSS custom properties, CSS grid' }}" />
+				<meta itemprop="applicationCategory" content="{{ app.applicationCategory | default: 'Utility' }}" />
+				<meta itemprop="operatingSystem" content="{{ app.operatingSysttem | default: 'Android 9, iOS 13, Windows 10, OSX' }}" />
+				<img src="{{ app.image.url }}" class="app-image" itemprop="image" alt="{{ app.image.alt | default: app.name | escape }}" loading="lazy" decoding="async" crossorigin="anonymous" referrerpolicy="no-referrer" height="{{ app.image.height | default: '150' }}" width="{{ app.image.width | default: '150' }}" />
+				<h3 class="app-name" itemprop="name">{{ app.name }}</h3>
+				<div class="app-description" itemprop="description">{{ app.description }}</div>
+				<div itemprop="publisher" itemtype="https://schema.org/Organization" itemscope="" hidden="">
+					<meta itemprop="name" content="KernValley.US" />
+					<meta itemprop="url" content="https://kernvalley.us" />
+					<meta itemprop="logo image" content="https://cdn.kernvalley.us/img/branding/kernvalley.us.svg" />
+				</div>
+			</a>
+		{% endunless %}
 	{% endfor %}
 </section>
 <section id="share-section" class="card">
