@@ -3,16 +3,38 @@
   description: Homepage for the Kern River Valley
   image:
     url: https://cdn.kernvalley.us/img/branding/kernvalley.us.svg
+- url: https://guide.kernvalley.us
+  name: Kern Valley Guide
+  description: List KRV businesses with address, phone number, website, etc.
+  image:
+    url: https://cdn.kernvalley.us/img/branding/guide.kernvalley.us.svg
 - url: https://events.kernvalley.us
   name: Kern Valley Events
   description: All of the best events in the Kern River Valley
   image:
     url: https://cdn.kernvalley.us/img/branding/events.kernvalley.us.svg
+- url: https://maps.kernvalley.us
+  name: Kern Valley Maps
+  dev: true
+  description: Map of businesses and locations throughout the Kern River Valley
+  image:
+    url: https://cdn.kernvalley.us/img/branding/maps.kernvalley.us.svg
+- url: https://weather.kernvalley.us
+  name: Kern Valley Weather
+  description: Weather for various towns in the Kern River Valley
+  image:
+    url: https://cdn.kernvalley.us/img/branding/weather.kernvalley.us.svg
 - url: https://ads.kernvalley.us
   name: Kern Valley Ads
   description: Advertise on local websites throughout the Kern River Valley
   image:
     url: https://cdn.kernvalley.us/img/branding/ads.kernvalley.us.svg
+- url: https://camping.kernvalley.us
+  name: Kern Valley Camping
+  dev: true
+  description: Map and info for camping sites aruond the Kern River Valley
+  image:
+    url: https://cdn.kernvalley.us/img/branding/camping.kernvalley.us.svg
 - url: https://whiskeyflatdays.com
   name: Whiskey Flat Days
   description: Map and events app for Whiskey Flat Days in Kernville, CA
@@ -23,33 +45,11 @@
   description: Contact KernValley.US
   image:
     url: https://cdn.kernvalley.us/img/branding/contact.kernvalley.us.svg
-- url: https://guide.kernvalley.us
-  name: Kern Valley Guide
-  description: List KRV businesses with address, phone number, website, etc.
-  image:
-    url: https://cdn.kernvalley.us/img/branding/guide.kernvalley.us.svg
 - url: https://apps.kernvalley.us
   name: KernValley.US Apps
   description: A listing of sites made by KernValley.US for the Kern River Valley
   image:
     url: https://cdn.kernvalley.us/img/branding/apps.kernvalley.us.svg
-- url: https://maps.kernvalley.us
-  name: Kern Valley Maps
-  dev: true
-  description: Map of businesses and locations throughout the Kern River Valley
-  image:
-    url: https://cdn.kernvalley.us/img/branding/maps.kernvalley.us.svg
-- url: https://maps.kernvalley.us
-  name: Kern Valley Camping
-  dev: true
-  description: Map and info for camping sites aruond the Kern River Valley
-  image:
-    url: https://cdn.kernvalley.us/img/branding/camping.kernvalley.us.svg
-- url: https://weather.kernvalley.us
-  name: Kern Valley Weather
-  description: Weather for various towns in the Kern River Valley
-  image:
-    url: https://cdn.kernvalley.us/img/branding/weather.kernvalley.us.svg
 - url: https://delivery.kernvalley.us
   dev: true
   name: Kern Valley Delivery
