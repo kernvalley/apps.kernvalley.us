@@ -15,7 +15,6 @@
     url: https://cdn.kernvalley.us/img/branding/events.kernvalley.us.svg
 - url: https://maps.kernvalley.us
   name: Kern Valley Maps
-  dev: true
   description: Map of businesses and locations throughout the Kern River Valley
   image:
     url: https://cdn.kernvalley.us/img/branding/maps.kernvalley.us.svg
@@ -31,7 +30,6 @@
     url: https://cdn.kernvalley.us/img/branding/ads.kernvalley.us.svg
 - url: https://camping.kernvalley.us
   name: Kern Valley Camping
-  dev: true
   description: Map and info for camping sites aruond the Kern River Valley
   image:
     url: https://cdn.kernvalley.us/img/branding/camping.kernvalley.us.svg
