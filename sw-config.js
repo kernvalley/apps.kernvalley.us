@@ -49,7 +49,7 @@ const config = {
 		'https://www.googletagmanager.com/gtag/js',
 		'https://i.imgur.com/',
 		'https://cdn.kernvalley.us/img/',
-		/https:\/\/*\.githubusercontent\.com\/u\/*/,
+		/https:\/\/\w+\.githubusercontent\.com\/u\/*/,
 	],
 	allowedFresh: [
 		'https://api.github.com/users/',
