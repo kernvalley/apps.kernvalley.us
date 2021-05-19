@@ -21,14 +21,14 @@ const config = {
 		'https://cdn.kernvalley.us/components/toast-message.html',
 		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.html',
 		'https://cdn.kernvalley.us/components/github/user.html',
-		'https://cdn.kernvalley.us/components/pwa/prompt.html',
+		'https://cdn.kernvalley.us/components/install/prompt.html',
 
 		/* CSS */
 		'/css/index.min.css',
 		'https://cdn.kernvalley.us/components/toast-message.css',
 		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.css',
 		'https://cdn.kernvalley.us/components/github/user.css',
-		'https://cdn.kernvalley.us/components/pwa/prompt.css',
+		'https://cdn.kernvalley.us/components/install/prompt.css',
 
 		/* Images & Icons */
 		'/img/icons.svg',
@@ -50,8 +50,10 @@ const config = {
 		'https://i.imgur.com/',
 		'https://cdn.kernvalley.us/img/',
 		/https:\/\/\w+\.githubusercontent\.com\/u\/*/,
+		/\.(jpg|png|webp|svg|gif)$/,
 	],
 	allowedFresh: [
 		'https://api.github.com/users/',
+		/\.(html|css|js|json)$/,
 	]
 };
