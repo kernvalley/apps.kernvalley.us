@@ -1,16 +1,13 @@
 - src: https://unpkg.com/@webcomponents/custom-elements@1.4.2/custom-elements.min.js
-  nomodule: true
+  noModule: true
   defer: true
-  async: true
   referrerPolicy: no-referrer
   crossOrigin: anonymous
 - src: https://cdn.polyfill.io/v3/polyfill.min.js
-  nomodule: true
+  noModule: true
   defer: true
-  async: true
   referrerPolicy: no-referrer
   crossOrigin: anonymous
 - src: /js/index.min.js
   referrerPolicy: no-referrer
-  async: true
   defer: true

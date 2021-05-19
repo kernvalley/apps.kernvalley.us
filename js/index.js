@@ -47,11 +47,12 @@ if (typeof GA === 'string' && GA.length !== 0) {
 	});
 }
 
-Promise.all(
+Promise.all([
 	getCustomElement('install-prompt'),
 	ready(),
-).then(([HTMLInstallPromptElement]) => {
-	init(),
-	on('#install-prompt', ['click'], () => new HTMLInstallPromptElement().show())
+]).then(([HTMLInstallPromptElement]) => {
+	init();
+
+	on('#install-btn', ['click'], () => new HTMLInstallPromptElement().show())
 		.forEach(el => el.hidden = false);
 });
