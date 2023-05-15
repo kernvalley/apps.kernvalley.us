@@ -2,6 +2,7 @@
   "name": "krv-apps",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "A directory of KernValley.US Web Apps",
   "config": {
     "icons": "./_data/icons.csv",
