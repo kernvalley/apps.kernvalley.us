@@ -1,0 +1,15 @@
+---
+public-share: img/adwaita-icons/places/folder-publicshare.svg
+web-browser: img/adwaita-icons/apps/web-browser.svg
+system-software-install: img/adwaita-icons/apps/system-software-install.svg
+call-start: img/adwaita-icons/actions/call-start.svg
+facebook: img/logos/facebook.svg
+twitter: img/logos/twitter.svg
+linkedin: img/logos/linkedin.svg
+mark-github: img/octicons/mark-github.svg
+repo: img/octicons/repo.svg
+issue-opened: img/octicons/issue-opened.svg
+link-external: img/octicons/link-external.svg
+x: img/octicons/x.svg
+eye: img/octicons/eye.svg
+address-book: img/adwaita-icons/mimetypes/x-office-address-book.svg

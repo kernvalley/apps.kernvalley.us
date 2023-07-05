@@ -15,20 +15,20 @@ const config = {
 		'/',
 
 		/* JS */
+		'{{ site.data.importmap.imports["@shgysk8zer0/polyfills"] }}',
+		'{{ site.data.importmap.imports["@shgysk8zer0/kazoo/"] }}harden.js',
 		'/js/index.min.js',
 
 		/* `customElements` templates */
-		'https://cdn.kernvalley.us/components/toast-message.html',
-		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.html',
-		'https://cdn.kernvalley.us/components/github/user.html',
-		'https://cdn.kernvalley.us/components/install/prompt.html',
+		'{{ site.data.importmap.imports["@shgysk8zer0/components/"] }}/button/share-to.html',
+		'{{ site.data.importmap.imports["@shgysk8zer0/components/"] }}/github/user.html',
+		'{{ site.data.importmap.imports["@shgysk8zer0/components/"] }}/install/prompt.html',
 
 		/* CSS */
 		'/css/index.min.css',
-		'https://cdn.kernvalley.us/components/toast-message.css',
-		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.css',
-		'https://cdn.kernvalley.us/components/github/user.css',
-		'https://cdn.kernvalley.us/components/install/prompt.css',
+		'{{ site.data.importmap.imports["@shgysk8zer0/components/"] }}/button/share-to.css',
+		'{{ site.data.importmap.imports["@shgysk8zer0/components/"] }}/github/user.css',
+		'{{ site.data.importmap.imports["@shgysk8zer0/components/"] }}/install/prompt.css',
 
 		/* Images & Icons */
 		'/img/icons.svg',
