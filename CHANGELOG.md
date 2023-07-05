@@ -13,10 +13,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.0.1] - 2023-07-05
+
 ### Added
 - Theme handling via `cookieStore`
 
 ### Changed
+- Update dependencies and config
 - Load `customElements` shim via `<script nomodule>`
 
 ### Removed

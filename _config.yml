@@ -3,7 +3,7 @@ author: KernValley.US
 title: Kern Valley Apps
 url: 'https://infallible-galileo-ac41ee.netlify.app'
 markdown: kramdown
-version: 1.0.0
+version: 1.0.1
 timezone: America/Los_Angeles
 lang: en
 dir: ltr
@@ -19,7 +19,7 @@ service_worker: "./service-worker.js"
 og-type: website
 description: "A directory of KernValley.US Web Apps"
 mobile-web-app-capable: true
-canonical: https://infallible-galileo-ac41ee.netlify.app/
+canonical: https://apps.kernvalley.us/
 keep-kern-clean: true
 keywords:
   - jekyll

@@ -1,0 +1,9 @@
+trusted:
+  - empty#html
+  - empty#script
+  - ga#script-url
+  - goog#html
+  - sanitizer-raw#html
+  - github-user#html
+  - share-to-buttons#html
+  - pwa-install

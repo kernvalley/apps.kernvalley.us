@@ -1,17 +1,13 @@
-import 'https://cdn.kernvalley.us/js/std-js/deprefixer.js';
-import 'https://cdn.kernvalley.us/js/std-js/shims.js';
-import 'https://cdn.kernvalley.us/js/std-js/theme-cookie.js';
-import 'https://cdn.kernvalley.us/components/share-button.js';
-import 'https://cdn.kernvalley.us/components/share-to-button/share-to-button.js';
-import 'https://cdn.kernvalley.us/components/github/user.js';
-import 'https://cdn.kernvalley.us/components/current-year.js';
-import 'https://cdn.kernvalley.us/components/install/prompt.js';
-import { ready, loaded, toggleClass, on, css } from 'https://cdn.kernvalley.us/js/std-js/dom.js';
-import { getCustomElement } from 'https://cdn.kernvalley.us/js/std-js/custom-elements.js';
-import { debounce } from 'https://cdn.kernvalley.us/js/std-js/events.js';
-import { init } from 'https://cdn.kernvalley.us/js/std-js/data-handlers.js';
-import { importGa, externalHandler, telHandler, mailtoHandler } from 'https://cdn.kernvalley.us/js/std-js/google-analytics.js';
+import '@shgysk8zer0/kazoo/theme-cookie.js';
+import { ready, toggleClass, on, css } from '@shgysk8zer0/kazoo/dom.js';
+import { getCustomElement } from '@shgysk8zer0/kazoo/custom-elements.js';
+import { debounce } from '@shgysk8zer0/kazoo/events.js';
+import { init } from '@shgysk8zer0/kazoo/data-handlers.js';
+import { getGooglePolicy } from '@shgysk8zer0/kazoo/trust-policies.js';
+import { createPolicy } from '@shgysk8zer0/kazoo/trust.js';
+import { importGa, externalHandler, telHandler, mailtoHandler } from '@shgysk8zer0/kazoo/google-analytics.js';
 import { GA } from './consts.js';
+import './components.js';
 
 toggleClass([document.documentElement], {
 	'js': true,
@@ -30,21 +26,26 @@ requestIdleCallback(() => {
 });
 
 if (typeof GA === 'string' && GA.length !== 0) {
-	loaded().then(() => {
-		requestIdleCallback(() => {
-			importGa(GA).then(async ({ ga }) => {
-				if (ga instanceof Function) {
-					ga('create', GA, 'auto');
-					ga('set', 'transport', 'beacon');
-					ga('send', 'pageview');
+	const policy = getGooglePolicy();
+	scheduler.postTask(() => {
+		requestIdleCallback(async () => {
+			const { ga, hasGa } = await importGa(GA, {}, { policy });
 
-					on('a[rel~="external"]', ['click'], externalHandler, { passive: true, capture: true });
-					on('a[href^="tel:"]', ['click'], telHandler, { passive: true, capture: true });
-					on('a[href^="mailto:"]', ['click'], mailtoHandler, { passive: true, capture: true });
-				}
-			});
+			if (hasGa()) {
+				ga('create', GA, 'auto');
+				ga('set', 'transport', 'beacon');
+				ga('send', 'pageview');
+
+				on('a[rel~="external"]', 'click', externalHandler, { passive: true, capture: true });
+				on('a[href^="tel:"]', 'click', telHandler, { passive: true, capture: true });
+				on('a[href^="mailto:"]', 'click', mailtoHandler, { passive: true, capture: true });
+			}
 		});
-	});
+	}, { priority: 'background' });
+} else {
+	createPolicy('goog#html', {});
+	createPolicy('goog#script-url', {});
+	getGooglePolicy();
 }
 
 Promise.all([
